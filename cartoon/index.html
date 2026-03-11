@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tom&Jerry</title>
     <link rel="stylesheet" href="css/estilo.css">
+    <script src="JS/crud.js"></script>
 </head>
 
-<body>
+<body onload="bd()">
     <div class="container">
         <div class="main-cartoon">
             <div class="elemento-cartoon">
@@ -22,7 +23,7 @@
                 <input type="text" id="email" placeholder="Insira seu email" class="box-cartoon">
 
                 <div class="btn-cartoon">
-                    <button class="botao-cartoon">Cadastrar</button>
+                    <button onclick="adicionar()" class="botao-cartoon">Cadastrar</button>
                     <button class="botao-cartoon">Sair</button>
                 </div>
             </div>
